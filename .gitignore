@@ -16,6 +16,7 @@ bin/
 *.dll
 *.so
 *.dylib
+wirelab
 
 # Go test & build artifacts
 *.test
