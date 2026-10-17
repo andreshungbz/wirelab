@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"html/template"
 	"log"
 	"net"
 	"net/http"
@@ -196,6 +197,28 @@ func safeError(w http.ResponseWriter, r *http.Request) {
 	err := errors.New("template failed halfway")
 	if err != nil {
 		note("error found: %v (nothing written to w yet)", err)
+		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+		return
+	}
+	buf.WriteTo(w)
+}
+
+// Exercise 5 Part D: Rewritten handler
+func reportPage(w http.ResponseWriter, r *http.Request) {
+	tmpl, err := template.ParseFiles("report.html")
+	if err != nil {
+		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+		return
+	}
+	data := struct {
+		Title string
+		Body  string
+	}{
+		Title: "Report",
+		Body:  "This is the report body.",
+	}
+	var buf bytes.Buffer
+	if err := tmpl.Execute(&buf, data); err != nil {
 		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
 		return
 	}
