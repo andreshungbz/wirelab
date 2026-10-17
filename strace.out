@@ -1,0 +1,42 @@
+436123 23:03:43.905983 write(2</dev/pts/3<char 136:3>>, "23:03:43.905895 lab server lis"..., 55) = 55
+436123 23:04:37.757656 write(2</dev/pts/3<char 136:3>>, "23:04:37.757643 SOCKET   conne"..., 45) = 45
+436127 23:04:37.757879 write(6<{eventfd-count=0, eventfd-id=750, eventfd-semaphore=0}>, "\1\0\0\0\0\0\0\0", 8) = 8
+436127 23:04:37.758158 write(2</dev/pts/3<char 136:3>>, "23:04:37.758147 HANDLER  ---- "..., 49) = 49
+436127 23:04:37.758252 write(2</dev/pts/3<char 136:3>>, "23:04:37.758239 HANDLER  first"..., 97) = 97
+436127 23:04:37.758317 write(2</dev/pts/3<char 136:3>>, "23:04:37.758307 HANDLER  w.Wri"..., 46) = 46
+436127 23:04:37.758377 write(2</dev/pts/3<char 136:3>>, "23:04:37.758365 HANDLER  ---- "..., 82) = 82
+436127 23:04:37.758478 write(4<TCP:[127.0.0.1:8080->127.0.0.1:43636]>, "HTTP/1.1 200 OK\r\nDate: Sat, 17"..., 143) = 143
+436127 23:04:37.763920 write(2</dev/pts/3<char 136:3>>, "23:04:37.763904 SOCKET   conn."..., 96) = 96
+436126 23:04:37.764082 write(2</dev/pts/3<char 136:3>>, "23:04:37.764075 SOCKET   conne"..., 43) = 43
+436123 23:04:37.769380 write(2</dev/pts/3<char 136:3>>, "23:04:37.769373 SOCKET   conne"..., 45) = 45
+436126 23:04:37.769620 write(2</dev/pts/3<char 136:3>>, "23:04:37.769615 HANDLER  ---- "..., 56) = 56
+436126 23:04:37.769684 write(2</dev/pts/3<char 136:3>>, "23:04:37.769676 HANDLER  first"..., 97) = 97
+436126 23:04:37.769759 write(2</dev/pts/3<char 136:3>>, "23:04:37.769749 HANDLER  w.Wri"..., 48) = 48
+436126 23:04:37.769808 write(6<{eventfd-count=0, eventfd-id=750, eventfd-semaphore=0}>, "\1\0\0\0\0\0\0\0", 8) = 8
+436123 23:04:38.070348 write(2</dev/pts/3<char 136:3>>, "23:04:38.070335 HANDLER  w.Wri"..., 48) = 48
+436123 23:04:38.070538 write(6<{eventfd-count=0, eventfd-id=750, eventfd-semaphore=0}>, "\1\0\0\0\0\0\0\0", 8) = 8
+436126 23:04:38.371100 write(2</dev/pts/3<char 136:3>>, "23:04:38.371089 HANDLER  w.Wri"..., 48) = 48
+436126 23:04:38.371216 write(6<{eventfd-count=0, eventfd-id=750, eventfd-semaphore=0}>, "\1\0\0\0\0\0\0\0", 8) = 8
+436123 23:04:38.671601 write(2</dev/pts/3<char 136:3>>, "23:04:38.671587 HANDLER  w.Wri"..., 48) = 48
+436123 23:04:38.671681 write(6<{eventfd-count=0, eventfd-id=750, eventfd-semaphore=0}>, "\1\0\0\0\0\0\0\0", 8) = 8
+436126 23:04:38.972247 write(2</dev/pts/3<char 136:3>>, "23:04:38.972224 HANDLER  (more"..., 74) = 74
+436127 23:04:38.972366 write(4<TCP:[127.0.0.1:8080->127.0.0.1:43640]>, "HTTP/1.1 200 OK\r\nDate: Sat, 17"..., 4096 <unfinished ...>
+436126 23:04:38.973593 --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=436123, si_uid=1000} ---
+436127 23:04:38.973632 <... write resumed>) = 4096
+436127 23:04:38.973657 write(2</dev/pts/3<char 136:3>>, "23:04:38.973647 SOCKET   conn."..., 96) = 96
+436127 23:04:38.973724 write(6<{eventfd-count=0, eventfd-id=750, eventfd-semaphore=0}>, "\1\0\0\0\0\0\0\0", 8) = 8
+436123 23:04:39.574602 write(2</dev/pts/3<char 136:3>>, "23:04:39.574588 HANDLER  ---- "..., 84) = 84
+436123 23:04:39.574742 write(4<TCP:[127.0.0.1:8080->127.0.0.1:43640]>, "dddddddddddddddddddddddddddddd"..., 2055) = 2055
+436123 23:04:39.574882 write(2</dev/pts/3<char 136:3>>, "23:04:39.574869 SOCKET   conn."..., 94) = 94
+436123 23:04:39.575063 write(2</dev/pts/3<char 136:3>>, "23:04:39.575056 SOCKET   conne"..., 43) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+436123 23:04:39.575136 --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=436123, si_uid=1000} ---
+436123 23:04:39.575185 write(2</dev/pts/3<char 136:3>>, "23:04:39.575056 SOCKET   conne"..., 43) = 43
+436123 23:04:54.901732 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+436123 23:04:54.901861 --- SIGINT {si_signo=SIGINT, si_code=SI_TKILL, si_pid=436123, si_uid=1000} ---
+436123 23:04:54.901990 --- SIGINT {si_signo=SIGINT, si_code=SI_TKILL, si_pid=436123, si_uid=1000} ---
+436128 23:04:54.902068 +++ killed by SIGINT +++
+436127 23:04:54.902094 +++ killed by SIGINT +++
+436126 23:04:54.902107 +++ killed by SIGINT +++
+436125 23:04:54.902119 +++ killed by SIGINT +++
+436124 23:04:54.902570 +++ killed by SIGINT +++
+436123 23:04:54.902592 +++ killed by SIGINT +++

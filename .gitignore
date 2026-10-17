@@ -21,6 +21,7 @@ wirelab
 # Go test & build artifacts
 *.test
 *.out
+!strace.out
 
 # Vendor
 vendor/
